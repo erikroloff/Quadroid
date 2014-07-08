@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1914345D196B77FD00658CE1 /* God Gave Me a Personal Tour of The Universe.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1914345C196B766600658CE1 /* God Gave Me a Personal Tour of The Universe.m4a */; };
 		19B15987196700700039B34B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B15986196700700039B34B /* Foundation.framework */; };
 		19B15989196700700039B34B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B15988196700700039B34B /* CoreGraphics.framework */; };
 		19B1598B196700700039B34B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B1598A196700700039B34B /* UIKit.framework */; };
@@ -18,13 +19,30 @@
 		19B1599F196700700039B34B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B1599D196700700039B34B /* Main_iPad.storyboard */; };
 		19B159A2196700700039B34B /* QDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B159A1196700700039B34B /* QDViewController.m */; };
 		19B159A5196700700039B34B /* QDMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B159A4196700700039B34B /* QDMyScene.m */; };
-		19B159A7196700700039B34B /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B159A6196700700039B34B /* Spaceship.png */; };
 		19B159A9196700700039B34B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B159A8196700700039B34B /* Images.xcassets */; };
 		19B159B0196700700039B34B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B159AF196700700039B34B /* XCTest.framework */; };
 		19B159B1196700700039B34B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B15986196700700039B34B /* Foundation.framework */; };
 		19B159B2196700700039B34B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B1598A196700700039B34B /* UIKit.framework */; };
 		19B159BA196700700039B34B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19B159B8196700700039B34B /* InfoPlist.strings */; };
 		19B159BC196700700039B34B /* QuadroidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B159BB196700700039B34B /* QuadroidTests.m */; };
+		19B159C7196702AB0039B34B /* QDSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B159C6196702AB0039B34B /* QDSquare.m */; };
+		19B159CA196713C00039B34B /* QDLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B159C9196713C00039B34B /* QDLevel.m */; };
+		19B159CD196718120039B34B /* QDSwap.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B159CC196718120039B34B /* QDSwap.m */; };
+		19B159D01967192D0039B34B /* QDChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B159CF1967192D0039B34B /* QDChain.m */; };
+		19B159D319671AB00039B34B /* QDTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B159D219671AB00039B34B /* QDTile.m */; };
+		19B159D519671F900039B34B /* Grid.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 19B159D419671F900039B34B /* Grid.atlas */; };
+		19B159DC19671FED0039B34B /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 19B159D719671FED0039B34B /* Level_0.json */; };
+		19B159DD19671FED0039B34B /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 19B159D819671FED0039B34B /* Level_1.json */; };
+		19B159DE19671FED0039B34B /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 19B159D919671FED0039B34B /* Level_2.json */; };
+		19B159DF19671FED0039B34B /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 19B159DA19671FED0039B34B /* Level_3.json */; };
+		19B159E019671FED0039B34B /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 19B159DB19671FED0039B34B /* Level_4.json */; };
+		19B159E2196720010039B34B /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E1196720010039B34B /* Sprites.atlas */; };
+		19B159EA196720110039B34B /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E4196720110039B34B /* Chomp.wav */; };
+		19B159EB196720110039B34B /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E5196720110039B34B /* Drip.wav */; };
+		19B159EC196720110039B34B /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E6196720110039B34B /* Error.wav */; };
+		19B159ED196720110039B34B /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E7196720110039B34B /* Ka-Ching.wav */; };
+		19B159EE196720110039B34B /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E8196720110039B34B /* Mining by Moonlight.mp3 */; };
+		19B159EF196720110039B34B /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E9196720110039B34B /* Scrape.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1914345C196B766600658CE1 /* God Gave Me a Personal Tour of The Universe.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "God Gave Me a Personal Tour of The Universe.m4a"; sourceTree = "<group>"; };
 		19B15983196700700039B34B /* Quadroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quadroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B15986196700700039B34B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19B15988196700700039B34B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,13 +74,35 @@
 		19B159A1196700700039B34B /* QDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDViewController.m; sourceTree = "<group>"; };
 		19B159A3196700700039B34B /* QDMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDMyScene.h; sourceTree = "<group>"; };
 		19B159A4196700700039B34B /* QDMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDMyScene.m; sourceTree = "<group>"; };
-		19B159A6196700700039B34B /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		19B159A8196700700039B34B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		19B159AE196700700039B34B /* QuadroidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadroidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B159AF196700700039B34B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		19B159B7196700700039B34B /* QuadroidTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuadroidTests-Info.plist"; sourceTree = "<group>"; };
 		19B159B9196700700039B34B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		19B159BB196700700039B34B /* QuadroidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadroidTests.m; sourceTree = "<group>"; };
+		19B159C5196702AB0039B34B /* QDSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDSquare.h; sourceTree = "<group>"; };
+		19B159C6196702AB0039B34B /* QDSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDSquare.m; sourceTree = "<group>"; };
+		19B159C8196713C00039B34B /* QDLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDLevel.h; sourceTree = "<group>"; };
+		19B159C9196713C00039B34B /* QDLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDLevel.m; sourceTree = "<group>"; };
+		19B159CB196718120039B34B /* QDSwap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDSwap.h; sourceTree = "<group>"; };
+		19B159CC196718120039B34B /* QDSwap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDSwap.m; sourceTree = "<group>"; };
+		19B159CE1967192D0039B34B /* QDChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDChain.h; sourceTree = "<group>"; };
+		19B159CF1967192D0039B34B /* QDChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDChain.m; sourceTree = "<group>"; };
+		19B159D119671AB00039B34B /* QDTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTile.h; sourceTree = "<group>"; };
+		19B159D219671AB00039B34B /* QDTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTile.m; sourceTree = "<group>"; };
+		19B159D419671F900039B34B /* Grid.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Grid.atlas; sourceTree = "<group>"; };
+		19B159D719671FED0039B34B /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		19B159D819671FED0039B34B /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		19B159D919671FED0039B34B /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		19B159DA19671FED0039B34B /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		19B159DB19671FED0039B34B /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		19B159E1196720010039B34B /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		19B159E4196720110039B34B /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
+		19B159E5196720110039B34B /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
+		19B159E6196720110039B34B /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
+		19B159E7196720110039B34B /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
+		19B159E8196720110039B34B /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
+		19B159E9196720110039B34B /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +172,21 @@
 				19B159A1196700700039B34B /* QDViewController.m */,
 				19B159A3196700700039B34B /* QDMyScene.h */,
 				19B159A4196700700039B34B /* QDMyScene.m */,
-				19B159A6196700700039B34B /* Spaceship.png */,
+				19B159C5196702AB0039B34B /* QDSquare.h */,
+				19B159C6196702AB0039B34B /* QDSquare.m */,
+				19B159C8196713C00039B34B /* QDLevel.h */,
+				19B159C9196713C00039B34B /* QDLevel.m */,
+				19B159CB196718120039B34B /* QDSwap.h */,
+				19B159CC196718120039B34B /* QDSwap.m */,
+				19B159CE1967192D0039B34B /* QDChain.h */,
+				19B159CF1967192D0039B34B /* QDChain.m */,
+				19B159D119671AB00039B34B /* QDTile.h */,
+				19B159D219671AB00039B34B /* QDTile.m */,
+				19B159E3196720110039B34B /* Sounds */,
+				19B159D619671FED0039B34B /* Levels */,
 				19B159A8196700700039B34B /* Images.xcassets */,
+				19B159E1196720010039B34B /* Sprites.atlas */,
+				19B159D419671F900039B34B /* Grid.atlas */,
 				19B1598F196700700039B34B /* Supporting Files */,
 			);
 			path = Quadroid;
@@ -165,6 +219,33 @@
 				19B159B8196700700039B34B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19B159D619671FED0039B34B /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				19B159D719671FED0039B34B /* Level_0.json */,
+				19B159D819671FED0039B34B /* Level_1.json */,
+				19B159D919671FED0039B34B /* Level_2.json */,
+				19B159DA19671FED0039B34B /* Level_3.json */,
+				19B159DB19671FED0039B34B /* Level_4.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		19B159E3196720110039B34B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1914345C196B766600658CE1 /* God Gave Me a Personal Tour of The Universe.m4a */,
+				19B159E4196720110039B34B /* Chomp.wav */,
+				19B159E5196720110039B34B /* Drip.wav */,
+				19B159E6196720110039B34B /* Error.wav */,
+				19B159E7196720110039B34B /* Ka-Ching.wav */,
+				19B159E8196720110039B34B /* Mining by Moonlight.mp3 */,
+				19B159E9196720110039B34B /* Scrape.wav */,
+			);
+			name = Sounds;
+			path = Levels/Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,10 +325,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19B159A7196700700039B34B /* Spaceship.png in Resources */,
+				1914345D196B77FD00658CE1 /* God Gave Me a Personal Tour of The Universe.m4a in Resources */,
+				19B159DD19671FED0039B34B /* Level_1.json in Resources */,
+				19B159EB196720110039B34B /* Drip.wav in Resources */,
+				19B159E019671FED0039B34B /* Level_4.json in Resources */,
+				19B159EE196720110039B34B /* Mining by Moonlight.mp3 in Resources */,
+				19B159EF196720110039B34B /* Scrape.wav in Resources */,
+				19B159DF19671FED0039B34B /* Level_3.json in Resources */,
 				19B159A9196700700039B34B /* Images.xcassets in Resources */,
+				19B159EA196720110039B34B /* Chomp.wav in Resources */,
+				19B159DC19671FED0039B34B /* Level_0.json in Resources */,
+				19B159E2196720010039B34B /* Sprites.atlas in Resources */,
 				19B1599F196700700039B34B /* Main_iPad.storyboard in Resources */,
+				19B159EC196720110039B34B /* Error.wav in Resources */,
 				19B1599C196700700039B34B /* Main_iPhone.storyboard in Resources */,
+				19B159ED196720110039B34B /* Ka-Ching.wav in Resources */,
+				19B159DE19671FED0039B34B /* Level_2.json in Resources */,
+				19B159D519671F900039B34B /* Grid.atlas in Resources */,
 				19B15993196700700039B34B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,10 +361,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B159C7196702AB0039B34B /* QDSquare.m in Sources */,
 				19B159A2196700700039B34B /* QDViewController.m in Sources */,
 				19B15995196700700039B34B /* main.m in Sources */,
+				19B159D319671AB00039B34B /* QDTile.m in Sources */,
 				19B15999196700700039B34B /* QDAppDelegate.m in Sources */,
+				19B159D01967192D0039B34B /* QDChain.m in Sources */,
 				19B159A5196700700039B34B /* QDMyScene.m in Sources */,
+				19B159CD196718120039B34B /* QDSwap.m in Sources */,
+				19B159CA196713C00039B34B /* QDLevel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +509,7 @@
 				INFOPLIST_FILE = "Quadroid/Quadroid-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -424,6 +524,7 @@
 				INFOPLIST_FILE = "Quadroid/Quadroid-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -487,6 +588,7 @@
 				19B159C1196700700039B34B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19B159C2196700700039B34B /* Build configuration list for PBXNativeTarget "QuadroidTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +597,7 @@
 				19B159C4196700700039B34B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
