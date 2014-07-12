@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1914345D196B77FD00658CE1 /* God Gave Me a Personal Tour of The Universe.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1914345C196B766600658CE1 /* God Gave Me a Personal Tour of The Universe.m4a */; };
 		19B15987196700700039B34B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B15986196700700039B34B /* Foundation.framework */; };
 		19B15989196700700039B34B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B15988196700700039B34B /* CoreGraphics.framework */; };
 		19B1598B196700700039B34B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B1598A196700700039B34B /* UIKit.framework */; };
@@ -43,6 +42,7 @@
 		19B159ED196720110039B34B /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E7196720110039B34B /* Ka-Ching.wav */; };
 		19B159EE196720110039B34B /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E8196720110039B34B /* Mining by Moonlight.mp3 */; };
 		19B159EF196720110039B34B /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E9196720110039B34B /* Scrape.wav */; };
+		19EF589D19716EA500BED16B /* God Gave Me a Personal Tour of The Universe 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19EF589C19716E9800BED16B /* God Gave Me a Personal Tour of The Universe 2.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1914345C196B766600658CE1 /* God Gave Me a Personal Tour of The Universe.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "God Gave Me a Personal Tour of The Universe.m4a"; sourceTree = "<group>"; };
 		19B15983196700700039B34B /* Quadroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quadroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B15986196700700039B34B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19B15988196700700039B34B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,6 +102,7 @@
 		19B159E7196720110039B34B /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
 		19B159E8196720110039B34B /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
 		19B159E9196720110039B34B /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		19EF589C19716E9800BED16B /* God Gave Me a Personal Tour of The Universe 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "God Gave Me a Personal Tour of The Universe 2.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +236,7 @@
 		19B159E3196720110039B34B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				1914345C196B766600658CE1 /* God Gave Me a Personal Tour of The Universe.m4a */,
+				19EF589C19716E9800BED16B /* God Gave Me a Personal Tour of The Universe 2.m4a */,
 				19B159E4196720110039B34B /* Chomp.wav */,
 				19B159E5196720110039B34B /* Drip.wav */,
 				19B159E6196720110039B34B /* Error.wav */,
@@ -325,7 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1914345D196B77FD00658CE1 /* God Gave Me a Personal Tour of The Universe.m4a in Resources */,
+				19EF589D19716EA500BED16B /* God Gave Me a Personal Tour of The Universe 2.m4a in Resources */,
 				19B159DD19671FED0039B34B /* Level_1.json in Resources */,
 				19B159EB196720110039B34B /* Drip.wav in Resources */,
 				19B159E019671FED0039B34B /* Level_4.json in Resources */,

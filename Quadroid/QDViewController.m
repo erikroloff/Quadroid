@@ -73,7 +73,7 @@
     // Present the scene.
     [skView presentScene:self.scene];
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"God Gave Me a Personal Tour of The Universe" withExtension:@"m4a"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"God Gave Me a Personal Tour of The Universe 2" withExtension:@"m4a"];
     self.backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     self.backgroundMusic.numberOfLoops = -1;
     [self.backgroundMusic play];
