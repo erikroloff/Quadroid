@@ -310,9 +310,9 @@ static const CGFloat TileHeight = 36.0;
 }
 
 - (void)preloadResources {
-    self.swapSound = [SKAction playSoundFileNamed:@"Chomp.wav" waitForCompletion:NO];
+    self.swapSound = [SKAction playSoundFileNamed:@"spaceWa.wav" waitForCompletion:NO];
     self.invalidSwapSound = [SKAction playSoundFileNamed:@"Error.wav" waitForCompletion:NO];
-    self.matchSound = [SKAction playSoundFileNamed:@"Ka-Ching.wav" waitForCompletion:NO];
+    self.matchSound = [SKAction playSoundFileNamed:@"memoryMoonSpaceBlaster.wav" waitForCompletion:NO];
     self.fallingSquareSound = [SKAction playSoundFileNamed:@"Scrape.wav" waitForCompletion:NO];
     self.addSquareSound = [SKAction playSoundFileNamed:@"Drip.wav" waitForCompletion:NO];
     [SKLabelNode labelNodeWithFontNamed:@"GillSans-BoldItalic"];

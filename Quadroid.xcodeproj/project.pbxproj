@@ -40,8 +40,9 @@
 		19B159EB196720110039B34B /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E5196720110039B34B /* Drip.wav */; };
 		19B159EC196720110039B34B /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E6196720110039B34B /* Error.wav */; };
 		19B159ED196720110039B34B /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E7196720110039B34B /* Ka-Ching.wav */; };
-		19B159EE196720110039B34B /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E8196720110039B34B /* Mining by Moonlight.mp3 */; };
 		19B159EF196720110039B34B /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B159E9196720110039B34B /* Scrape.wav */; };
+		19B68074197AC2F0001D146B /* memoryMoonSpaceBlaster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B68073197AC2F0001D146B /* memoryMoonSpaceBlaster.wav */; };
+		19B68076197AC439001D146B /* spaceWa.wav in Resources */ = {isa = PBXBuildFile; fileRef = 19B68075197AC439001D146B /* spaceWa.wav */; };
 		19EF589D19716EA500BED16B /* God Gave Me a Personal Tour of The Universe 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19EF589C19716E9800BED16B /* God Gave Me a Personal Tour of The Universe 2.m4a */; };
 /* End PBXBuildFile section */
 
@@ -100,8 +101,9 @@
 		19B159E5196720110039B34B /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
 		19B159E6196720110039B34B /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
 		19B159E7196720110039B34B /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
-		19B159E8196720110039B34B /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
 		19B159E9196720110039B34B /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		19B68073197AC2F0001D146B /* memoryMoonSpaceBlaster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = memoryMoonSpaceBlaster.wav; sourceTree = "<group>"; };
+		19B68075197AC439001D146B /* spaceWa.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spaceWa.wav; sourceTree = "<group>"; };
 		19EF589C19716E9800BED16B /* God Gave Me a Personal Tour of The Universe 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "God Gave Me a Personal Tour of The Universe 2.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -237,11 +239,12 @@
 			isa = PBXGroup;
 			children = (
 				19EF589C19716E9800BED16B /* God Gave Me a Personal Tour of The Universe 2.m4a */,
+				19B68073197AC2F0001D146B /* memoryMoonSpaceBlaster.wav */,
+				19B68075197AC439001D146B /* spaceWa.wav */,
 				19B159E4196720110039B34B /* Chomp.wav */,
 				19B159E5196720110039B34B /* Drip.wav */,
 				19B159E6196720110039B34B /* Error.wav */,
 				19B159E7196720110039B34B /* Ka-Ching.wav */,
-				19B159E8196720110039B34B /* Mining by Moonlight.mp3 */,
 				19B159E9196720110039B34B /* Scrape.wav */,
 			);
 			name = Sounds;
@@ -325,11 +328,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B68076197AC439001D146B /* spaceWa.wav in Resources */,
 				19EF589D19716EA500BED16B /* God Gave Me a Personal Tour of The Universe 2.m4a in Resources */,
 				19B159DD19671FED0039B34B /* Level_1.json in Resources */,
 				19B159EB196720110039B34B /* Drip.wav in Resources */,
 				19B159E019671FED0039B34B /* Level_4.json in Resources */,
-				19B159EE196720110039B34B /* Mining by Moonlight.mp3 in Resources */,
 				19B159EF196720110039B34B /* Scrape.wav in Resources */,
 				19B159DF19671FED0039B34B /* Level_3.json in Resources */,
 				19B159A9196700700039B34B /* Images.xcassets in Resources */,
@@ -343,6 +346,7 @@
 				19B159DE19671FED0039B34B /* Level_2.json in Resources */,
 				19B159D519671F900039B34B /* Grid.atlas in Resources */,
 				19B15993196700700039B34B /* InfoPlist.strings in Resources */,
+				19B68074197AC2F0001D146B /* memoryMoonSpaceBlaster.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

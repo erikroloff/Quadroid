@@ -18,6 +18,7 @@
 @property (strong, nonatomic) QDMyScene *scene;
 @property (assign, nonatomic) NSUInteger movesLeft;
 @property (assign, nonatomic) NSUInteger score;
+@property (assign, nonatomic) NSInteger levelNumber;
 
 @property (weak, nonatomic) IBOutlet UILabel *targetLabel;
 @property (weak, nonatomic) IBOutlet UILabel *movesLabel;
@@ -30,6 +31,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *shuffleButton;
 
 @property (strong, nonatomic) AVAudioPlayer *backgroundMusic;
+
 
 @end
 
@@ -107,10 +109,33 @@
 }
 
 - (void)beginGame {
-    self.movesLeft = self.level.maximumMoves;
+    // Old way
+    //self.movesLeft = self.level.maximumMoves;
+    
+    self.movesLeft = 99;
     self.score = 0;
     [self updateLabels];
     
+    self.level = nil;
+    NSString *levelFileString = [NSString stringWithFormat:@"Level_%ld", (long)self.levelNumber];
+    self.level = [[QDLevel alloc] initWithFile:levelFileString];
+    
+    self.scene.level = self.level;
+    [self.level resetComboMultiplier];
+    
+    [self.scene animateBeginGame];
+    [self shuffle];
+}
+
+- (void)beginNewLevel {
+    
+    [self updateLabels];
+    
+    self.level = nil;
+    NSString *levelFileString = [NSString stringWithFormat:@"Level_%ld", (long)self.levelNumber];
+    self.level = [[QDLevel alloc] initWithFile:levelFileString];
+    
+    self.scene.level = self.level;
     [self.level resetComboMultiplier];
     
     [self.scene animateBeginGame];
@@ -162,13 +187,44 @@
     self.movesLeft--;
     [self updateLabels];
     
+    [self updateLevels];
+    
+    
+}
+
+- (void)updateLevels {
+    
     if (self.score >= self.level.targetScore) {
         self.gameOverPanel.image = [UIImage imageNamed:@"LevelComplete"];
-        [self showGameOver];
+        self.levelNumber++;
+        [self showLevelComplete];
     } else if (self.movesLeft == 0) {
         self.gameOverPanel.image = [UIImage imageNamed:@"GameOver"];
+        self.levelNumber = 0;
         [self showGameOver];
     }
+}
+
+- (void)showLevelComplete {
+    [self.scene animateGameOver];
+    self.gameOverPanel.hidden = NO;
+    self.scene.userInteractionEnabled = NO;
+    
+    self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideLevelComplete)];
+    [self.view addGestureRecognizer:self.tapGestureRecognizer];
+    self.shuffleButton.hidden = YES;
+    
+}
+
+- (void)hideLevelComplete {
+        [self.view removeGestureRecognizer:self.tapGestureRecognizer];
+        self.tapGestureRecognizer = nil;
+        
+        self.gameOverPanel.hidden = YES;
+        self.scene.userInteractionEnabled = YES;
+        
+        [self beginNewLevel];
+        self.shuffleButton.hidden = NO;
 }
 
 - (void)showGameOver {
