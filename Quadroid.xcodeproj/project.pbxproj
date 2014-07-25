@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192523761981D83F00B27A27 /* Level_6.json in Resources */ = {isa = PBXBuildFile; fileRef = 192523751981D83F00B27A27 /* Level_6.json */; };
+		192523781981F2EE00B27A27 /* Level_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 192523771981F2EE00B27A27 /* Level_5.json */; };
 		19B15987196700700039B34B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B15986196700700039B34B /* Foundation.framework */; };
 		19B15989196700700039B34B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B15988196700700039B34B /* CoreGraphics.framework */; };
 		19B1598B196700700039B34B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B1598A196700700039B34B /* UIKit.framework */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		192523751981D83F00B27A27 /* Level_6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_6.json; sourceTree = "<group>"; };
+		192523771981F2EE00B27A27 /* Level_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_5.json; sourceTree = "<group>"; };
 		19B15983196700700039B34B /* Quadroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quadroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B15986196700700039B34B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19B15988196700700039B34B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -231,6 +235,8 @@
 				19B159D919671FED0039B34B /* Level_2.json */,
 				19B159DA19671FED0039B34B /* Level_3.json */,
 				19B159DB19671FED0039B34B /* Level_4.json */,
+				192523771981F2EE00B27A27 /* Level_5.json */,
+				192523751981D83F00B27A27 /* Level_6.json */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -344,8 +350,10 @@
 				19B1599C196700700039B34B /* Main_iPhone.storyboard in Resources */,
 				19B159ED196720110039B34B /* Ka-Ching.wav in Resources */,
 				19B159DE19671FED0039B34B /* Level_2.json in Resources */,
+				192523761981D83F00B27A27 /* Level_6.json in Resources */,
 				19B159D519671F900039B34B /* Grid.atlas in Resources */,
 				19B15993196700700039B34B /* InfoPlist.strings in Resources */,
+				192523781981F2EE00B27A27 /* Level_5.json in Resources */,
 				19B68074197AC2F0001D146B /* memoryMoonSpaceBlaster.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,6 +19,7 @@
 @property (assign, nonatomic) NSUInteger movesLeft;
 @property (assign, nonatomic) NSUInteger score;
 @property (assign, nonatomic) NSInteger levelNumber;
+@property (assign, nonatomic) NSInteger targetScore;
 
 @property (weak, nonatomic) IBOutlet UILabel *targetLabel;
 @property (weak, nonatomic) IBOutlet UILabel *movesLabel;
@@ -111,7 +112,7 @@
 - (void)beginGame {
     // Old way
     //self.movesLeft = self.level.maximumMoves;
-    
+    self.targetScore = self.level.targetScore;
     self.movesLeft = 99;
     self.score = 0;
     [self updateLabels];
@@ -128,14 +129,14 @@
 }
 
 - (void)beginNewLevel {
-    
-    [self updateLabels];
-    
     self.level = nil;
     NSString *levelFileString = [NSString stringWithFormat:@"Level_%ld", (long)self.levelNumber];
     self.level = [[QDLevel alloc] initWithFile:levelFileString];
     
+    // targetScore is additive - adds each new level
+    self.targetScore = self.targetScore + self.level.targetScore;
     self.scene.level = self.level;
+    [self updateLabels];
     [self.level resetComboMultiplier];
     
     [self.scene animateBeginGame];
@@ -178,7 +179,7 @@
 }
 
 - (void)updateLabels {
-    self.targetLabel.text = [NSString stringWithFormat:@"%lu", (long)self.level.targetScore];
+    self.targetLabel.text = [NSString stringWithFormat:@"%lu", (long)self.targetScore];
     self.movesLabel.text = [NSString stringWithFormat:@"%lu", (long)self.movesLeft];
     self.scoreLabel.text = [NSString stringWithFormat:@"%lu", (long)self.score];
 }
@@ -194,7 +195,7 @@
 
 - (void)updateLevels {
     
-    if (self.score >= self.level.targetScore) {
+    if (self.score >= self.targetScore) {
         self.gameOverPanel.image = [UIImage imageNamed:@"LevelComplete"];
         self.levelNumber++;
         [self showLevelComplete];
