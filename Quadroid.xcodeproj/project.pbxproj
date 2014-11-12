@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		192523761981D83F00B27A27 /* Level_6.json in Resources */ = {isa = PBXBuildFile; fileRef = 192523751981D83F00B27A27 /* Level_6.json */; };
 		192523781981F2EE00B27A27 /* Level_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 192523771981F2EE00B27A27 /* Level_5.json */; };
+		192BE0661985567F00A012B9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192BE0651985567F00A012B9 /* GameKit.framework */; };
 		19B15987196700700039B34B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B15986196700700039B34B /* Foundation.framework */; };
 		19B15989196700700039B34B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B15988196700700039B34B /* CoreGraphics.framework */; };
 		19B1598B196700700039B34B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B1598A196700700039B34B /* UIKit.framework */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		192523751981D83F00B27A27 /* Level_6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_6.json; sourceTree = "<group>"; };
 		192523771981F2EE00B27A27 /* Level_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_5.json; sourceTree = "<group>"; };
+		192BE0651985567F00A012B9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		19B15983196700700039B34B /* Quadroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quadroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B15986196700700039B34B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19B15988196700700039B34B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +122,7 @@
 				19B1598B196700700039B34B /* UIKit.framework in Frameworks */,
 				19B1598D196700700039B34B /* SpriteKit.framework in Frameworks */,
 				19B15987196700700039B34B /* Foundation.framework in Frameworks */,
+				192BE0661985567F00A012B9 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +161,7 @@
 		19B15985196700700039B34B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				192BE0651985567F00A012B9 /* GameKit.framework */,
 				19B15986196700700039B34B /* Foundation.framework */,
 				19B15988196700700039B34B /* CoreGraphics.framework */,
 				19B1598A196700700039B34B /* UIKit.framework */,
@@ -305,6 +309,14 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Erik Roloff";
 				TargetAttributes = {
+					19B15982196700700039B34B = {
+						DevelopmentTeam = 6NCXCKZ93A;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
+					};
 					19B159AD196700700039B34B = {
 						TestTargetID = 19B15982196700700039B34B;
 					};
@@ -516,10 +528,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quadroid/Quadroid-Prefix.pch";
 				INFOPLIST_FILE = "Quadroid/Quadroid-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -531,10 +546,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quadroid/Quadroid-Prefix.pch";
 				INFOPLIST_FILE = "Quadroid/Quadroid-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;

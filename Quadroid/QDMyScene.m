@@ -10,6 +10,7 @@
 #import "QDSquare.h"
 #import "QDLevel.h"
 #import "QDSwap.h"
+#define IS_WIDESCREEN ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
 
 
 static const CGFloat TileWidth = 32.0;
@@ -466,6 +467,27 @@ static const CGFloat TileHeight = 36.0;
 
 - (void)removeAllSquareSprites {
     [self.squaresLayer removeAllChildren];
+}
+
+- (SKTextureAtlas *)textureAtlasNamed:(NSString *)fileName
+{
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        
+        if (IS_WIDESCREEN) {
+            // iPhone Retina 4-inch
+            fileName = [NSString stringWithFormat:@"%@-568", fileName];
+        } else {
+            // iPhone Retina 3.5-inch
+            fileName = fileName;
+        }
+        
+    } else {
+        fileName = [NSString stringWithFormat:@"%@-ipad", fileName];
+    }
+    
+    SKTextureAtlas *textureAtlas = [SKTextureAtlas atlasNamed:fileName];
+    
+    return textureAtlas;
 }
 
 @end
